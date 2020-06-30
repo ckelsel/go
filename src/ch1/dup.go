@@ -30,18 +30,18 @@ func readFromStdin() {
 }
 
 func main() {
-    counts := make(map[string]int)
+	counts := make(map[string]int)
 
-    if (len(os.Args) <=1) {
-        return
-    }
+	if len(os.Args) <= 1 {
+		return
+	}
 
-    filename := os.Args[1]
+	filename := os.Args[1]
 
-    f,err := os.Open(filename)
-    if (err != nil) {
-        return
-    }
+	f, err := os.Open(filename)
+	if err != nil {
+		return
+	}
 
 	input := bufio.NewScanner(f)
 
@@ -60,5 +60,5 @@ func main() {
 		}
 	}
 
-    f.Close()
+	f.Close()
 }

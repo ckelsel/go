@@ -8,9 +8,9 @@ import (
 )
 
 func main() {
-    // 定义url       int url;
-    // 初始化url     url = xxx;
-    url := os.Args[1]
+	// 定义url       int url;
+	// 初始化url     url = xxx;
+	url := os.Args[1]
 	resp, err := http.Get(url)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "fetch : %v\n", err)

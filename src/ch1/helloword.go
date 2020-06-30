@@ -4,6 +4,6 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("xx")
-    fmt.Println("aaa")
+	fmt.Println("xx")
+	fmt.Println("aaa")
 }

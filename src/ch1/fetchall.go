@@ -30,6 +30,6 @@ func fetch(url string, ch chan<- string) {
 	} else {
 		// TODO
 		ch <- fmt.Sprintf("Get %s success", url)
-        resp.Body.Close()
+		resp.Body.Close()
 	}
 }
